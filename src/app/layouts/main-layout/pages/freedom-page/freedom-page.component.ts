@@ -29,7 +29,7 @@ export class FreedomPageComponent {
 
     this.getPages();
     const data = {
-      title: 'HealingTube Health Topics',
+      title: 'Tube.Yoga Pages',
       url: `${location.href}`,
       description: '',
     };

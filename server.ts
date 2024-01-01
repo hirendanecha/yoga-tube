@@ -86,15 +86,15 @@ export function app(): express.Express {
         var seo: any = {
           title: 'Tube.Yoga',
           description:
-            'Private video consultations with Naturopathic Doctors and Holistic Healers from around the world. Social Discussion on how to heal various ailments.',
+            'Online yoga classes. Sweat, stretch or savasana. Paticipate with amazing instuctors!',
           image:
-            'https://www.tube.yoga/assets/images/Ht-Profile-pic-default.png',
+            'https://www.tube.yoga/assets/images/TubeYoga-banner.jpg',
           site: 'https://www.tube.yoga/',
           url: 'https://www.tube.yoga' + params,
           keywords: 'Tube.Yoga',
         };
         if (
-          params.indexOf('communities/') > -1 ||
+          params.indexOf('yoga-instructors/') > -1 ||
           params.indexOf('pages/') > -1
         ) {
           let id = params.split('/');
@@ -155,7 +155,7 @@ export function app(): express.Express {
           const talent = {
             name: post?.title || post?.albumname || 'tube.yoga Post',
             description: pdhtml?.textContent || 'Post content',
-            image: post?.thumbfilename || post?.metaimage || post?.imageUrl || 'https://www.tube.yoga/assets/images/Ht-Profile-pic-default.png',
+            image: post?.thumbfilename || post?.metaimage || post?.imageUrl || 'https://www.tube.yoga/assets/images/TubeYoga-banner.jpg',
           };
           seo.title = talent.name;
           seo.description = strip_html_tags(talent.description);
@@ -170,7 +170,7 @@ export function app(): express.Express {
 
           console.log('group===>', group);
           const talent = {
-            name: `HealingTube Research ${group?.PageTitle}`,
+            name: `Yoga Research ${group?.PageTitle}`,
             description: group?.PageDescription,
             image: group?.CoverPicName || group?.ProfilePicName
           };
