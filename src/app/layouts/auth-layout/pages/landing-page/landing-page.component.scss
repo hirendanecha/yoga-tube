@@ -18,6 +18,11 @@
     background-repeat: no-repeat;
     object-fit: cover;
     height: calc(100vh - 48px);
+
+    @media (max-width:750px){
+      background-size: cover;
+      background-position: 65%;
+    }
     
     .banner-text {
       max-width: 450px;
