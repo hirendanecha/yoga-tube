@@ -69,7 +69,7 @@ export class SignUpComponent implements OnInit, AfterViewInit {
       title: 'Tube.Yoga Registration',
       url: `${environment.webUrl}sign-up`,
       description: 'Registration page',
-      image: `${environment.webUrl}assets/images/landingpage/Healing-Tube-Logo.png`,
+      image: `${environment.webUrl}assets/images/landingpage/tubeyoga-logo.jpg`,
     };
     // this.seoService.updateSeoMetaData(data);
   }

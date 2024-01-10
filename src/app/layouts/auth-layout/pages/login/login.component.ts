@@ -58,7 +58,7 @@ export class LoginComponent implements OnInit, AfterViewInit {
       title: 'Tube.Yoga login',
       url: `${environment.webUrl}login`,
       description: 'login page',
-      image: `${environment.webUrl}assets/images/landingpage/Healing-Tube-Logo.png`,
+      image: `${environment.webUrl}assets/images/landingpage/tubeyoga-logo.jpg`,
     };
     // this.seoService.updateSeoMetaData(data);
   }
