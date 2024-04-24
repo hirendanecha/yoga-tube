@@ -39,6 +39,8 @@ export class SignUpComponent implements OnInit, AfterViewInit {
     file: null,
     url: '',
   };
+  passwordHidden: boolean = true;
+
 
   @ViewChild('zipCode') zipCode: ElementRef;
 
@@ -209,6 +211,10 @@ export class SignUpComponent implements OnInit, AfterViewInit {
     }
 
     return true;
+  }
+  togglePasswordVisibility(passwordInput: HTMLInputElement) {
+    passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
+    this.passwordHidden = !this.passwordHidden;
   }
 
   onSubmit(): void {
