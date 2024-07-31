@@ -395,7 +395,11 @@ export class AddCommunityModalComponent implements OnInit, AfterViewInit {
   }
 
   clearForm(){
-    this.router.navigate(['/yoga-instructors'])
+    if (this.data.Id) {
+      this.activeModal.close();
+    } else {
+      this.router.navigate(['/yoga-instructors']);
+    }
   }
 
   convertToUppercase(event: any) {
