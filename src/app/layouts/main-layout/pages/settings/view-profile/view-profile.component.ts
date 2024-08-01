@@ -181,9 +181,9 @@ export class ViewProfileComponent implements OnInit, AfterViewInit, OnDestroy {
       if (res === 'success') {
         const data = {
           appointmentId: obj.id,
-          practitionerProfileId: obj.practitionerProfileId,
+          instructureProfileId: obj.instructureProfileId,
           profileId: obj.profileId,
-          practitionerName: obj.practitionerName,
+          instructureName: obj.instructureName,
         };
         this.getCancelAppoinments(data);
       }

@@ -74,6 +74,21 @@
                 >Uploaded Files</a
               >
             </li>
+            <ng-container 
+            *ngIf="profileId"
+            >
+            <li
+              class="nav-item"
+              role="presentation"
+              (click)="activeTab = 4; getUserAppoinments(profileId)"
+            >
+              <a
+                class="nav-link d-center"
+                [ngClass]="activeTab === 4 ? 'active' : ''"
+                >Appointments</a
+              >
+            </li>
+          </ng-container>
           </ul>
         </div>
       </div>
@@ -261,7 +276,7 @@
                 <thead>
                   <tr class="text-center">
                     <th>Profile</th>
-                    <th>Practitioner Name</th>
+                    <th>Instructors Name</th>
                     <th>Date</th>
                     <th>Time</th>
                     <th>Status</th>
