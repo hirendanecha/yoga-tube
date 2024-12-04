@@ -86,7 +86,7 @@ export function app(): express.Express {
         var seo: any = {
           title: 'Tube.Yoga',
           description:
-            'Online yoga classes. Sweat, stretch or savasana. Participate with amazing Instructor!',
+            'Online yoga classes. Sweat, stretch or savasana. Participate with amazing Instructors!',
           image:
             'https://www.tube.yoga/assets/images/TubeYoga-banner.jpg',
           site: 'https://www.tube.yoga/',
